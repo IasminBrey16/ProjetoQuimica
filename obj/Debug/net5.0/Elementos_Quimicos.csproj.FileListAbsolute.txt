@@ -1,0 +1,7 @@
+C:\Projeto_UP\Projeto\Elementos_Quimicos\obj\Debug\net5.0\Elementos_Quimicos.csproj.AssemblyReference.cache
+C:\Projeto_UP\Projeto\Elementos_Quimicos\obj\Debug\net5.0\Elementos_Quimicos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projeto_UP\Projeto\Elementos_Quimicos\obj\Debug\net5.0\Elementos_Quimicos.AssemblyInfoInputs.cache
+C:\Projeto_UP\Projeto\Elementos_Quimicos\obj\Debug\net5.0\Elementos_Quimicos.AssemblyInfo.cs
+C:\Projeto_UP\Projeto\Elementos_Quimicos\obj\Debug\net5.0\Elementos_Quimicos.csproj.CoreCompileInputs.cache
+C:\Projeto_UP\Projeto\Elementos_Quimicos\obj\Debug\net5.0\Elementos_Quimicos.MvcApplicationPartsAssemblyInfo.cs
+C:\Projeto_UP\Projeto\Elementos_Quimicos\obj\Debug\net5.0\Elementos_Quimicos.MvcApplicationPartsAssemblyInfo.cache

@@ -1,0 +1,28 @@
+### Listar os Elementos Calculados
+GET https://localhost:5001/Elementos_Quimicos/elemento/listar
+
+### Calcular um Elemento Químico
+POST https://localhost:5001/Elementos_Quimicos/elemento/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "",
+    "massa" : ""
+    
+}api
+
+### Buscar um Elemento Químico pelo seu Id
+GET https://localhost:5001//elemento/buscar/
+
+### Deletar um Elementos Químico pelo Id
+DELETE https://localhost:5001/Elementos_Quimicos/elemento/deletar/
+
+### Alterar um Elementos Químico
+PATCH  https://localhost:5001/Elementos_Quimicos/elemento/alterar
+Content-Type: application/json
+
+{
+    "id" :  ,
+    "nome" : "",
+    "massa" : ""
+}
