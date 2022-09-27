@@ -13,6 +13,8 @@ namespace API.Models
         [Required(ErrorMessage = "O campo nome é obrigatório!")]
         public string Name { get; set; }
 
+        public string SpecificName { get; set; } 
+
         public string Group { get; set; }
 
         public List<Element> Elements { get; set; }

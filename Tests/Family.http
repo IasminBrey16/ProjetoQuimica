@@ -1,0 +1,29 @@
+### Listar Familias
+GET https://localhost:5001/api/family/list
+
+### Cadastrar uma Familia
+POST https://localhost:5001/api/family/create
+Content-Type: application/json
+
+{
+    "name" : "",
+    "specific name" : "",
+    "group": ""
+}
+
+### Buscar uma Familia pelo seu Id
+GET https://localhost:5001/api/family/search/
+
+### Deletar uma Familias pelo Id
+DELETE https://localhost:5001/api/family/delete/
+
+### Alterar uma Familias
+PATCH  https://localhost:5001/api/family/update
+Content-Type: application/json
+
+{
+    "id" :  ,
+    "name" : "",
+    "specific name" : "",
+    "group": ""
+}

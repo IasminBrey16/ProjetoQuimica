@@ -1,0 +1,27 @@
+### Listar os Elements Calculados
+GET https://localhost:5001/api/element/list
+
+### Calcular um Element Químico
+POST https://localhost:5001/api/element/create
+Content-Type: application/json
+
+{
+    "symbol" : "Ca",
+    "z" : "20"
+}
+
+### Buscar um Element Químico pelo seu Simbolo
+GET https://localhost:5001/api/element/search/
+
+### Deletar um Elements Químico pelo Id
+DELETE https://localhost:5001/api/element/delete/
+
+### Alterar um Elements Químico
+PATCH  https://localhost:5001/api/element/update
+Content-Type: application/json
+
+{
+    "id" :  ,
+    "symbol" : "",
+    "z" : ""
+}
