@@ -1,27 +1,27 @@
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using Elementos_Quimicos.Models;
+using API.Models;
 
-namespace Elementos_Quimicos.Validations
+namespace API.Validations
 {
-    public class ElementoEmUso : ValidationAttribute
+    public class ElementEmUso : ValidationAttribute
     {
-        // public ElementoEmUso(string nome) { }
+        // public ElementEmUso(string symbol) { }
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            string nome = (string)value;
+            string symbol = (string)value;
 
             DataContext context =
                 (DataContext)validationContext.GetService(typeof(DataContext));
 
-            Funcionario funcionario = context.Funcionarios.FirstOrDefault
-                (f => f.Nome.Equals(nome));
+            Element element = context.Elements.FirstOrDefault
+                (f => f.Symbol.Equals(symbol));
                 
-            if (elemento == null)
+            if (element == null)
             {
                 return ValidationResult.Success;
             }
-            return new ValidationResult("O Elemento citado já está em uso!");
+            return new ValidationResult("O Element citado já está em uso!");
         }
     }
 }

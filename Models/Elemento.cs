@@ -1,22 +1,30 @@
 using System;
 using System.ComponentModel.DataAnnotations;
-using Elementos_Quimicos.Validations;
+using API.Validations;
 
-namespace Elementos_Quimicos.Models
+namespace API.Models
 {
     //Data Annotations
-    public class Elemento
+    public class Element
     {
-        public Elemento () => CriadoEm = DateTime.Now;
+        public Element () => CriadoEm = DateTime.Now;
+
         public int Id { get; set; }
 
-        [Required(ErrorMessage = "O campo nome(do elemento) é obrigatório!")]
-        public string Nome { get; set; }
+        [Required(ErrorMessage = "O campo simbolo(do elemento) é obrigatório!")]
+        public string Symbol { get; set; }
 
         
-        [Required(ErrorMessage = "O campo massa é obrigatório!")]
-        public string Massa { get; set; }
+        [Required(ErrorMessage = "O campo número atômico(Z) é obrigatório!")]
+        public int Z { get; set; }
 
+        public string EletronicConfiguration { get; set; }
+
+        public string Period { get; set; }
+
+        public int FamilyId { get; set; }
+
+        public Family Family { get; set; }
 
         public DateTime CriadoEm { get; set; }
     }

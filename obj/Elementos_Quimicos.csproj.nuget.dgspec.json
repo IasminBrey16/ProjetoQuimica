@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projeto_UP\\Projeto\\Elementos_Quimicos\\Elementos_Quimicos.csproj": {}
+    "C:\\Users\\Brey\\Documents\\GitHub\\ProjetoQuimica\\Elementos_Quimicos.csproj": {}
   },
   "projects": {
-    "C:\\Projeto_UP\\Projeto\\Elementos_Quimicos\\Elementos_Quimicos.csproj": {
+    "C:\\Users\\Brey\\Documents\\GitHub\\ProjetoQuimica\\Elementos_Quimicos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projeto_UP\\Projeto\\Elementos_Quimicos\\Elementos_Quimicos.csproj",
+        "projectUniqueName": "C:\\Users\\Brey\\Documents\\GitHub\\ProjetoQuimica\\Elementos_Quimicos.csproj",
         "projectName": "Elementos_Quimicos",
-        "projectPath": "C:\\Projeto_UP\\Projeto\\Elementos_Quimicos\\Elementos_Quimicos.csproj",
-        "packagesPath": "C:\\Users\\felip\\.nuget\\packages\\",
-        "outputPath": "C:\\Projeto_UP\\Projeto\\Elementos_Quimicos\\obj\\",
+        "projectPath": "C:\\Users\\Brey\\Documents\\GitHub\\ProjetoQuimica\\Elementos_Quimicos.csproj",
+        "packagesPath": "C:\\Users\\Brey\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brey\\Documents\\GitHub\\ProjetoQuimica\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\felip\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Brey\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
