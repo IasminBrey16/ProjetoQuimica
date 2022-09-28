@@ -7,14 +7,17 @@ Content-Type: application/json
 
 {
     "symbol" : "Ca",
-    "z" : "20"
+    "z" : "20",
+    "eletronicConfiguration": "",
+    "group": 0,
+    "familyId": 0
 }
 
 ### Buscar um Element Químico pelo seu Simbolo
 GET https://localhost:5001/api/element/search/
 
 ### Deletar um Elements Químico pelo Id
-DELETE https://localhost:5001/api/element/delete/
+DELETE https://localhost:5001/api/element/delete/2
 
 ### Alterar um Elements Químico
 PATCH  https://localhost:5001/api/element/update
@@ -23,5 +26,8 @@ Content-Type: application/json
 {
     "id" :  ,
     "symbol" : "",
-    "z" : ""
+    "z" : "",
+    "eletronicConfiguration": "",
+    "familyId": "",
+    "family": ""
 }

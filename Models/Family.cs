@@ -15,8 +15,6 @@ namespace API.Models
 
         public string SpecificName { get; set; } 
 
-        public string Group { get; set; }
-
         public List<Element> Elements { get; set; }
     }
 }

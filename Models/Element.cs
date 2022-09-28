@@ -20,7 +20,7 @@ namespace API.Models
 
         public string EletronicConfiguration { get; set; }
 
-        public string Period { get; set; }
+        public int Group { get; set; }
 
         public int FamilyId { get; set; }
 

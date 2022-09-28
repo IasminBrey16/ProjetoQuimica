@@ -23,9 +23,19 @@ namespace API.Controllers
         [Route("create")]
         public IActionResult Create([FromBody] Element element)
         {
-            _context.Elements.Add(element);
+            var ec = EletronicDistribution.Calcular(element.Z);
+            Element el = new Element
+            {
+                Symbol = element.Symbol,
+                Z = element.Z,
+                EletronicConfiguration = ec,
+                Group = 1,
+                FamilyId = 1,
+                Family = element.Family
+            };
+            _context.Elements.Add(el);
             _context.SaveChanges();
-            return Created("", element);
+            return Created("", el);
         }
 
         // GET: /api/element/search/{symbol}

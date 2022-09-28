@@ -6,9 +6,8 @@ POST https://localhost:5001/api/family/create
 Content-Type: application/json
 
 {
-    "name" : "",
-    "specific name" : "",
-    "group": ""
+    "name" : "3B",
+    "specificName" : "Actinídeos"
 }
 
 ### Buscar uma Familia pelo seu Id
@@ -22,8 +21,7 @@ PATCH  https://localhost:5001/api/family/update
 Content-Type: application/json
 
 {
-    "id" :  ,
-    "name" : "",
-    "specific name" : "",
-    "group": ""
+    "id" :  2,
+    "name" : "2A",
+    "specificName" : "Metais Alcalinos Terrosos"
 }
