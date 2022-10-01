@@ -1,4 +1,8 @@
 using System;
+using API.Models;
+using System.Collections.Generic;
+using System.Linq;
+using Microsoft.AspNetCore.Mvc;
 
 namespace API
 {
@@ -62,12 +66,60 @@ namespace API
             } while (z != 0);
         }
 
-        public static int ReturnGroup(string s) {
+        public static int getFamilyId(string s) 
+        {
             if (s == "Li" || s == "Na" || s == "K" || s == "Rb" || s == "Cs" || s == "Fr") {
                 return 1;
             }
-            return 0;
+            else if (s == "Be" || s == "Ca" || s == "Mg" || s == "Sr" || s == "Ba" || s == "Ra") {
+                return 2;
+            }
+            else if (s == "B" || s == "Al" || s == "Ga" || s == "In" || s == "Tl") {
+                return 13;
+            }
+            else if (s == "C" || s == "Si" || s == "Ge" || s == "Sn" || s == "Pb") {
+                return 14;
+            }
+            else if (s == "N" || s == "P" || s == "As" || s == "Sb" || s == "Bi" || s == "") {
+                return 15;
+            }
+            else if (s == "O" || s == "S" || s == "Se" || s == "Te" || s == "Po") {
+                return 16;
+            }
+            else if (s == "F" || s == "Cl" || s == "Br" || s == "I" || s == "At") {
+                return 17;
+            }
+            else if (s == "He" || s == "Ne" || s == "Ar" || s == "Kr" || s == "Xe" || s == "Rn") {
+                return 18;
+            }
+            else if (s == "La" || s == "Ce" || s == "Pr" || s == "Nd" || s == "Pm" || s == "Sm") {
+                return 19;
+            }
+            else if (s == "Eu" || s == "Gd" || s == "Tb" || s == "Dy" || s == "Ho" || s == "Er") {
+                return 19;
+            }
+            else if (s == "Tm" || s == "Yb") {
+                return 19;
+            }
+            else if (s == "Ac" || s == "Th" || s == "Pa" || s == "U" || s == "Np" || s == "Pu") {
+                return 20;
+            } 
+            else if (s == "Am" || s == "Cm" || s == "Bk" || s == "Cf" || s == "Es" || s == "Fm") {
+                return 20;
+            } 
+            else if (s == "Md" || s == "No") {
+                return 20;
+            } else {
+                return 4;
+            }
         }
-        public static void ReturnFamilyId() {}
+
+        public static Family getFamily(string s,DataContext _context) 
+        {
+            var id = getFamilyId(s);
+            Family family = _context.Families.
+                FirstOrDefault(f => f.Id.Equals(id));
+            return family;
+        }
     }
 }

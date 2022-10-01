@@ -6,18 +6,17 @@ POST https://localhost:5001/api/element/create
 Content-Type: application/json
 
 {
-    "symbol" : "Ca",
-    "z" : "20",
-    "eletronicConfiguration": "",
-    "group": 0,
-    "familyId": 0
+    "symbol" : "Cm",
+    "z" : "96",
+    "familyId": "0"
+
 }
 
 ### Buscar um Element Químico pelo seu Simbolo
 GET https://localhost:5001/api/element/search/
 
 ### Deletar um Elements Químico pelo Id
-DELETE https://localhost:5001/api/element/delete/2
+DELETE https://localhost:5001/api/element/delete/27
 
 ### Alterar um Elements Químico
 PATCH  https://localhost:5001/api/element/update

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using API.Validations;
+using System.Text.Json.Serialization;
 
 namespace API.Models
 {
@@ -15,6 +16,7 @@ namespace API.Models
 
         public string SpecificName { get; set; } 
 
+        [JsonIgnore]
         public List<Element> Elements { get; set; }
     }
 }

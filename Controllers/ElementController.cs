@@ -23,15 +23,14 @@ namespace API.Controllers
         [Route("create")]
         public IActionResult Create([FromBody] Element element)
         {
-            var ec = EletronicDistribution.Calcular(element.Z);
+            string ec = EletronicDistribution.Calcular(element.Z);
+            Family family = EletronicDistribution.getFamily(element.Symbol, _context);
             Element el = new Element
             {
                 Symbol = element.Symbol,
                 Z = element.Z,
                 EletronicConfiguration = ec,
-                Group = 1,
-                FamilyId = 1,
-                Family = element.Family
+                FamilyId = family.Id
             };
             _context.Elements.Add(el);
             _context.SaveChanges();
