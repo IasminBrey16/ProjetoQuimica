@@ -6,27 +6,27 @@ POST https://localhost:5001/api/element/create
 Content-Type: application/json
 
 {
-    "symbol" : "Cm",
-    "z" : "96",
-    "familyId": "0"
+    "symbol" : "Fe",
+    "z" : "26",
+    "familyId": 0
 
 }
 
 ### Buscar um Element Químico pelo seu Simbolo
-GET https://localhost:5001/api/element/search/
+GET https://localhost:5001/api/element/search/Fe
 
 ### Alterar um Elements Químico
 PATCH  https://localhost:5001/api/element/update
 Content-Type: application/json
 
 {
-    "id" :  ,
-    "symbol" : "Cm",
-    "z" : "96",
+    "id" :  30,
+    "symbol" : "Fe",
+    "z" : "26",
     "eletronicConfiguration": "",
-    "familyId": "",
-    "family": ""
+    "familyId": 8,
+    "criadoEm": "2022-10-01T00:16:28.3465991"
 }
 
 ### Deletar um Elements Químico pelo Id
-DELETE https://localhost:5001/api/element/delete/27
+DELETE https://localhost:5001/api/element/delete/29
