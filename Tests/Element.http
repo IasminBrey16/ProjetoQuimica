@@ -15,18 +15,18 @@ Content-Type: application/json
 ### Buscar um Element Químico pelo seu Simbolo
 GET https://localhost:5001/api/element/search/
 
-### Deletar um Elements Químico pelo Id
-DELETE https://localhost:5001/api/element/delete/27
-
 ### Alterar um Elements Químico
 PATCH  https://localhost:5001/api/element/update
 Content-Type: application/json
 
 {
     "id" :  ,
-    "symbol" : "",
-    "z" : "",
+    "symbol" : "Cm",
+    "z" : "96",
     "eletronicConfiguration": "",
     "familyId": "",
     "family": ""
 }
+
+### Deletar um Elements Químico pelo Id
+DELETE https://localhost:5001/api/element/delete/27

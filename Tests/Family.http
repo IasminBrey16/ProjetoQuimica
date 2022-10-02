@@ -7,7 +7,7 @@ Content-Type: application/json
 
 {
     "name" : "3B",
-    "specificName" : "Actinídeos"
+    "specificName" : "Família do Nitrogênio"
 }
 
 ### Buscar uma Familia pelo seu Id
@@ -21,7 +21,7 @@ PATCH  https://localhost:5001/api/family/update
 Content-Type: application/json
 
 {
-    "id" :  2,
-    "name" : "2A",
-    "specificName" : "Metais Alcalinos Terrosos"
+    "id" :  ,
+    "name" : "3B",
+    "specificName" : "Actinídeos"
 }
