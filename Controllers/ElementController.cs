@@ -23,18 +23,12 @@ namespace API.Controllers
         [Route("create")]
         public IActionResult Create([FromBody] Element element)
         {
-            string ec = EletronicDistribution.Calcular(element.Z);
-            Family family = EletronicDistribution.getFamily(element.Symbol, _context);
-            Element el = new Element
-            {
-                Symbol = element.Symbol,
-                Z = element.Z,
-                EletronicConfiguration = ec,
-                FamilyId = family.Id
-            };
-            _context.Elements.Add(el);
+            string ed = EletronicDistribution.Calcular(element.Z);
+            element.EletronicConfiguration = ed;
+            element.Family = _context.Families.Find(element.FamilyId);
+            _context.Elements.Add(element);
             _context.SaveChanges();
-            return Created("", el);
+            return Created("", element);
         }
 
         // GET: /api/element/search/{symbol}

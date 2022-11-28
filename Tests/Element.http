@@ -8,7 +8,7 @@ Content-Type: application/json
 {
     "symbol" : "Fe",
     "z" : "26",
-    "familyId": 0
+    "familyId": 8
 
 }
 
@@ -29,4 +29,4 @@ Content-Type: application/json
 }
 
 ### Deletar um Elements Químico pelo Id
-DELETE https://localhost:5001/api/element/delete/29
+DELETE https://localhost:5001/api/element/delete/33
