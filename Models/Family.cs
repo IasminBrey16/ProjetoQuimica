@@ -6,7 +6,6 @@ using System.Text.Json.Serialization;
 
 namespace API.Models
 {
-    //Data Annotations
     public class Family
     {
         public int Id { get; set; }
@@ -16,7 +15,5 @@ namespace API.Models
 
         public string SpecificName { get; set; } 
 
-        [JsonIgnore]
-        public List<Element> Elements { get; set; }
     }
 }

@@ -33,8 +33,7 @@ namespace API.Controllers
         [Route("search/{id}")]
         public IActionResult Search([FromRoute] string id)
         {
-            Family family = _context.Families.
-                FirstOrDefault(f => f.Id.Equals(id));
+            Family family = _context.Families.Find(id);
             return family != null ? Ok(family) : NotFound();
         }
 
