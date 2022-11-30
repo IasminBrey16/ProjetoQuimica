@@ -56,6 +56,14 @@ namespace API.Controllers
             return NotFound();
         }
 
+        [HttpGet]
+        [Route("filter/{familyId}")]
+        public IActionResult Filter([FromRoute] int familyId)
+        {            
+            return Ok(_context.Elements.Where
+                (e => e.FamilyId == familyId).ToList());
+        } 
+
         // PATCH: /api/element/update
         [HttpPatch]
         [Route("update")]

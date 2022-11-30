@@ -15,6 +15,9 @@ Content-Type: application/json
 ### Buscar um Element Químico pelo seu Simbolo
 GET https://localhost:5001/api/element/search/Fe
 
+### Filtrar um Element Químico pela Familia
+GET https://localhost:5001/api/element/filter/8
+
 ### Alterar um Elements Químico
 PATCH  https://localhost:5001/api/element/update
 Content-Type: application/json

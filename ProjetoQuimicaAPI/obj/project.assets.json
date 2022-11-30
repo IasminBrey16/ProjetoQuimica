@@ -1287,11 +1287,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Brey\\Documents\\GitHub\\ProjetoQuimica\\Elementos_Quimicos.csproj",
+      "projectUniqueName": "C:\\Users\\Brey\\Documents\\GitHub\\ProjetoQuimica\\ProjetoQuimicaAPI\\Elementos_Quimicos.csproj",
       "projectName": "Elementos_Quimicos",
-      "projectPath": "C:\\Users\\Brey\\Documents\\GitHub\\ProjetoQuimica\\Elementos_Quimicos.csproj",
+      "projectPath": "C:\\Users\\Brey\\Documents\\GitHub\\ProjetoQuimica\\ProjetoQuimicaAPI\\Elementos_Quimicos.csproj",
       "packagesPath": "C:\\Users\\Brey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Brey\\Documents\\GitHub\\ProjetoQuimica\\obj\\",
+      "outputPath": "C:\\Users\\Brey\\Documents\\GitHub\\ProjetoQuimica\\ProjetoQuimicaAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Brey\\AppData\\Roaming\\NuGet\\NuGet.Config"
